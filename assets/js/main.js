@@ -3,9 +3,9 @@ requirejs.config({
         'bootstrap' : 'plugins/bootstrap-2.3.1.min',
         'validate' : 'plugins/jquery-validate-1.12.0pre.min',
         'hippify' : 'plugins/hippify/hippify.min',
-        'fitvid' : 'plugins/fitvids.js/jquery.fitvids.min',
+        'fitvid' : 'plugins/jquery.fitvids.min',
         'fancybox' : 'plugins/jquery-fancybox-2.1.4.min',
-        'flexslider' : 'plugins/FlexSlider/jquery.flexslider-min'
+        'flexslider' : 'plugins/jquery.flexslider-min'
     }
 });
 
