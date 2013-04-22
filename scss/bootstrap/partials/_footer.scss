@@ -1,0 +1,49 @@
+.footer {
+    color: white;
+    background-color: $color-footer;
+    @if $scheme-flat == false {
+        @include background(linear-gradient(lighten($color-footer, 2), darken($color-footer, 2)) top repeat);
+    }
+    &.container {
+        padding: 1em 2em;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: block;
+        list-style: none;
+    }
+    p {
+        margin: 0 0 .5em;
+    }
+    a {
+        color: $color-footer-links;
+        font-size: .9em;
+        text-decoration: none;
+        @include breakpoint(false, $mobile-page-width + 1) {
+            &:hover {
+                color: lighten($color-footer-links, 5);
+            }
+            &:active {
+                color: darken($color-footer-links, 5);
+            }
+        }
+    }
+    .footer-col-title {
+        display: block;
+        font-size: .9em;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: .5em;
+    }
+    .last {
+        text-align: right;
+    }
+    .footer-logo {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

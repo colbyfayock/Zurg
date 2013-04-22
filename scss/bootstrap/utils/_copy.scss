@@ -1,0 +1,52 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: .4em;
+}
+
+h2 {
+    margin-bottom: .6em;
+}
+
+ul, ol {
+    padding-left: 1.2em;
+}
+
+p {
+    text-align: inherit;
+}
+
+hr {
+    border-color: $lgrey;
+    margin-top: 0;
+    margin-bottom: 2.5em;
+}
+
+code {
+    display: block;
+    line-height: 1.2em;
+    background-color: #eee;
+    padding: 0 .15em;
+    border: solid 1px #dedede;
+    margin-bottom: 1em;
+}
+
+p code {
+    @include inline-block;
+    margin-bottom: 0;
+}
+
+blockquote {
+    background-color: #EEE;
+    padding: 1em 2em;
+    margin: 0;
+    margin-bottom: 1.5em;
+    p {
+        margin-top: 0;
+    }
+    cite {
+        font-size: .8em;
+    }
+}

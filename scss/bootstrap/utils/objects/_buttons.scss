@@ -1,0 +1,111 @@
+%button-base {
+    @include inline-block;
+    font-size: .8em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: .5em 1em;
+    border-radius: .25em;
+    margin-top: .5em;
+    @if $scheme-flat == false or $scheme-modern == true {
+        background-clip: padding-box;
+    }
+    @include breakpoint(false, $mobile-page-width + 1) {
+        &:hover:not(:disabled) {
+            cursor: pointer;
+        }
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+}
+
+button, .button {
+    @extend %button-base;
+
+    color: white;
+    background-color: $mgrey;
+    border: 1px solid darken($mgrey, 5);
+
+    @if $scheme-flat == false or $scheme-modern == true {
+        text-shadow: 0 1px 0 darken($mgrey, 15);
+        @include background(linear-gradient(lighten($mgrey, 3), darken($mgrey, 3)) top repeat);
+        box-shadow: inset 0 1px 0 0 lighten($mgrey, 15);
+    }
+
+    @include breakpoint(false, $mobile-page-width + 1) {
+        &:hover:not(:disabled) {
+            background-color: lighten($mgrey, 3);
+            @if $scheme-flat == false or $scheme-modern == true {
+                @include background(linear-gradient(lighten($mgrey, 6), $mgrey) top repeat);
+                box-shadow: inset 0 1px 0 0 lighten($mgrey, 18);
+            }
+        }
+        &:active:not(:disabled) {
+            background-color: darken($mgrey, 3);
+            @if $scheme-flat == false or $scheme-modern == true {
+                @include background(linear-gradient(darken($mgrey, 2), lighten($mgrey, 2)) top repeat);
+            }
+        }
+    }
+}
+
+.button-primary {
+    @extend %button-base;
+
+    color: white;
+    background-color: $primary-button-color;
+    border: 1px solid darken($primary-button-color, 5);
+
+    @if $scheme-flat == false or $scheme-modern == true {
+        text-shadow: 0 1px 0 darken($primary-button-color, 15);
+        @include background(linear-gradient(lighten($primary-button-color, 3), darken($primary-button-color, 3)) top repeat);
+        box-shadow: inset 0 1px 0 0 lighten($primary-button-color, 15);
+    }
+
+    @include breakpoint(false, $mobile-page-width + 1) {
+        &:hover:not(:disabled) {
+            background-color: lighten($primary-button-color, 3);
+            @if $scheme-flat == false or $scheme-modern == true {
+                @include background(linear-gradient(lighten($primary-button-color, 6), $primary-button-color) top repeat);
+                box-shadow: inset 0 1px 0 0 lighten($primary-button-color, 18);
+            }
+        }
+        &:active:not(:disabled) {
+            background-color: darken($primary-button-color, 3);
+            @if $scheme-flat == false or $scheme-modern == true {
+                @include background(linear-gradient(darken($primary-button-color, 2), lighten($primary-button-color, 2)) top repeat);
+            }
+        }
+    }
+}
+
+.button-secondary {
+    @extend %button-base;
+
+    color: white;
+    background-color: $secondary-button-color;
+    border: 1px solid darken($secondary-button-color, 5);
+
+    @if $scheme-flat == false or $scheme-modern == true {
+        text-shadow: 0 1px 0 darken($secondary-button-color, 15);
+        @include background(linear-gradient(lighten($secondary-button-color, 3), darken($secondary-button-color, 3)) top repeat);
+        box-shadow: inset 0 1px 0 0 lighten($secondary-button-color, 15);
+    }
+
+    @include breakpoint(false, $mobile-page-width + 1) {
+        &:hover:not(:disabled) {
+            background-color: lighten($secondary-button-color, 3);
+            @if $scheme-flat == false or $scheme-modern == true {
+                @include background(linear-gradient(lighten($secondary-button-color, 6), $secondary-button-color) top repeat);
+                box-shadow: inset 0 1px 0 0 lighten($secondary-button-color, 18);
+            }
+        }
+        &:active:not(:disabled) {
+            background-color: darken($secondary-button-color, 3);
+            @if $scheme-flat == false or $scheme-modern == true {
+                @include background(linear-gradient(darken($secondary-button-color, 2), lighten($secondary-button-color, 2)) top repeat);
+            }
+        }
+    }
+}

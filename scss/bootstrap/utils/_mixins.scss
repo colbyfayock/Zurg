@@ -1,0 +1,21 @@
+@mixin breakpoint($max: false, $min: false) {
+    @if $max {
+        @if $min {
+            @media all and (min-width: $min) and (max-width: $max) {
+                @content;
+            }
+        } @else {
+            @media all and (max-width: $max) {
+                @content;
+            }
+        }
+    } @else if $min {
+        @media all and (min-width: $min) {
+            @content;
+        }
+    } @else {
+        @media all {
+            @content;
+        }
+    }
+}

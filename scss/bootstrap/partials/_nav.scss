@@ -1,0 +1,95 @@
+.nav {
+    color: #222;
+    background-color: $color-nav;
+    @if $scheme-flat == false {
+        @include background(linear-gradient(lighten($color-nav, 2), darken($color-nav, 2)) top repeat);
+    }
+    div {
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+    ul {
+        display: block;
+        height: 2.5em;
+        padding: 0;
+        margin: 0;
+        float: right;
+    }
+    li {
+        display: block;
+        height: 2.5em;
+        line-height: 2.5em;
+        list-style: none;
+        margin-left: 1em;
+        float: left;
+    }
+    a {
+        color: $color-nav-links;
+        font-size: .9em;
+        text-decoration: none;
+        @include breakpoint(false, $mobile-page-width + 1) {
+            &:hover {
+                color: lighten($color-nav-links, 5);
+            }
+            &:active {
+                color: darken($color-nav-links, 5);
+            }
+        }
+    }
+    .nav-logo a {
+        display: block;
+        color: $color-nav-logo;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    @include breakpoint($mobile-page-width) {
+        .row, .nav-collapse, ul, li {
+            width: 100%!important;
+            height: auto;
+            margin: 0;
+        }
+        .sixcol {
+            width: 50%;
+            margin: 0;
+            float: left;
+            &:first-child {
+                padding-left: 1em;
+            }
+            &.nav-mobile {
+                padding-right: 1em;
+            }
+        }
+        .last {
+            text-align: right;
+        }
+
+        .nav-mobile a {
+            display: block;
+            width: 2.5em;
+            height: 2.5em;
+            font-size: 1em;
+            line-height: 2.5em;
+            text-align: center;
+            float: right;
+        }
+        .nav-mobile i {
+            @include inline-block;
+            width: 2em;
+            height: 2em;
+            font-size: .9em;
+            line-height: 2em;
+            border-radius: .25em;
+            background-color: #222;
+        }
+
+        .nav-collapse {
+            display: none;
+            background-color: $dgrey;
+        }
+        .nav-collapse a {
+            display: block;
+            padding: 0 1em;
+            border-bottom: solid 1px black;
+        }
+    }
+}

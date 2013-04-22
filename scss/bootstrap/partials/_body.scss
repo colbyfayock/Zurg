@@ -1,0 +1,16 @@
+.content {
+    background-color: $color-body;
+}
+
+.body {
+    background-color: white;
+    margin: 0 auto;
+}
+
+.row .center-head {
+    margin-bottom: 2.5em;
+    h1, h2, h3, h4, h5, h6 {
+        display: block;
+        text-align: center;
+    }
+}

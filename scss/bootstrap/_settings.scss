@@ -1,0 +1,38 @@
+// Scheme settings
+
+$scheme-flat: true;
+$scheme-modern: true;
+
+// Colors
+
+$primary: #a10d14;
+$secondary: #373b4c;
+
+$lgrey: #eee;
+$mgrey: #999;
+$dgrey: #222;
+$red: #ff3f3f;
+
+$primary-button-color: $primary;
+$secondary-button-color: $secondary;
+
+$color-nav: $primary;
+$color-nav-logo: white;
+$color-nav-links: $lgrey;
+
+$color-body: false; // Set false if no color
+
+$color-footer: $dgrey;
+$color-footer-links: $lgrey;
+
+
+// Dimensions
+
+$mobile-page-width: 640px;
+$tablet-page-width: 1024px;
+
+$large-page-width: 1000px;
+$small-page-width: 800px;
+
+$grid-page-width: 1200px;
+$grid-page-width-mobile: 640px;
