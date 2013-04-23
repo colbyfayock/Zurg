@@ -7,7 +7,7 @@ sass_dir = "scss"
 images_dir = "assets/img"
 fonts_dir = "assets/fonts"
 
-output_style = :expanded
+output_style = :compressed
 relative_assets = true
 linecomments = false
 
