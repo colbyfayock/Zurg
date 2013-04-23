@@ -775,54 +775,61 @@ h2 {
 }
 
 /* line 13, ../../scss/bootstrap/utils/_copy.scss */
-ul, ol {
+ul, ol, dd {
   padding-left: 1.2em;
+  margin: 0;
 }
 
-/* line 17, ../../scss/bootstrap/utils/_copy.scss */
+/* line 18, ../../scss/bootstrap/utils/_copy.scss */
+dd {
+  border-left: solid 1px #eeeeee;
+}
+
+/* line 22, ../../scss/bootstrap/utils/_copy.scss */
 p {
   text-align: inherit;
 }
 
-/* line 21, ../../scss/bootstrap/utils/_copy.scss */
+/* line 26, ../../scss/bootstrap/utils/_copy.scss */
 hr {
   border-color: #eeeeee;
   margin-top: 0;
   margin-bottom: 2.5em;
 }
 
-/* line 27, ../../scss/bootstrap/utils/_copy.scss */
+/* line 32, ../../scss/bootstrap/utils/_copy.scss */
 code {
   display: block;
   line-height: 1.2em;
   background-color: #eee;
-  padding: 0 .15em;
+  padding: .75em;
   border: solid 1px #dedede;
   margin-bottom: 1em;
 }
 
-/* line 36, ../../scss/bootstrap/utils/_copy.scss */
+/* line 41, ../../scss/bootstrap/utils/_copy.scss */
 p code {
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
+  padding: 0 .15em;
   margin-bottom: 0;
 }
 
-/* line 41, ../../scss/bootstrap/utils/_copy.scss */
+/* line 47, ../../scss/bootstrap/utils/_copy.scss */
 blockquote {
   background-color: #EEE;
   padding: 1em 2em;
   margin: 0;
   margin-bottom: 1.5em;
 }
-/* line 46, ../../scss/bootstrap/utils/_copy.scss */
+/* line 52, ../../scss/bootstrap/utils/_copy.scss */
 blockquote p {
   margin-top: 0;
 }
-/* line 49, ../../scss/bootstrap/utils/_copy.scss */
+/* line 55, ../../scss/bootstrap/utils/_copy.scss */
 blockquote cite {
   font-size: .8em;
 }

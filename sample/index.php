@@ -3,14 +3,12 @@
 <!--[if IE 9 ]><html class="ie"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
     <head>
-        <? //temp variable space
-            $googleAnalyticsId = 'UA-XXXXX-X'
-        ?>
 
-        <?include 'partials/header.php';?>
+        <?include 'partials/meta.php';?>
 
-        <link rel="stylesheet" href="assets/css/main.css?v=1">
+        <link rel="stylesheet" href="../assets/css/main.css">
 
+        <!-- https://github.com/aFarkas/html5shiv -->
         <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
 
     </head>
@@ -20,18 +18,14 @@
 
         <?include 'partials/nav.php';?>
 
-        <div class="container content">
-            <div class="body">
-                <?include 'partials/filler.php';?>
-            </div>
-        </div>
+        <?include 'partials/filler.php';?>
 
         <?include 'partials/footer.php';?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/js/plugins/jquery-1.9.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="../assets/js/lib/jquery-1.9.1.min.js"><\/script>')</script>
 
-        <script data-main="assets/js/main" src="assets/js/require.js"></script>
+        <script data-main="../assets/js/main.min" src="../assets/js/require.js"></script>
 
         <?include 'partials/tracking.php';?>
 

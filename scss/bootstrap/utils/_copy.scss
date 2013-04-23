@@ -10,8 +10,13 @@ h2 {
     margin-bottom: .6em;
 }
 
-ul, ol {
+ul, ol, dd {
     padding-left: 1.2em;
+    margin: 0;
+}
+
+dd {
+    border-left: solid 1px $lgrey;
 }
 
 p {
@@ -28,13 +33,14 @@ code {
     display: block;
     line-height: 1.2em;
     background-color: #eee;
-    padding: 0 .15em;
+    padding: .75em;
     border: solid 1px #dedede;
     margin-bottom: 1em;
 }
 
 p code {
     @include inline-block;
+    padding: 0 .15em;
     margin-bottom: 0;
 }
 
