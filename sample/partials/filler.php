@@ -216,7 +216,7 @@
         <div class="row">
             <div class="eightcol embed-widget">
                 <h3>Sample ShowClix event widget</h3>
-                <iframe src="//embed.showclix.com/events/6/tag/scb.fayock.dev" style="width: 100%; height: 772px;"></iframe>
+                <iframe class="showclix-embed" src="//embed.showclix.com/events/6/tag/scb.fayock.dev" ></iframe>
             </div>
             <div class="fourcol last social-widget">
                 <h3>Social media widgets</h3>
