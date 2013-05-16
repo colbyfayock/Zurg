@@ -24,7 +24,7 @@ $zurg-dgrey: #222 !default;
 	$zurg-dgrey: $dgrey;
 }
 
-$zurg-red: #9f111b !default;
+$zurg-red: #8f0e0c !default;
 @if $red {
 	$zurg-red: $red;
 }
@@ -33,6 +33,13 @@ $zurg-blue: #373b4c !default;
 @if $blue {
 	$zurg-blue: $blue;
 }
+
+$zurg-purple: #552e84 !default;
+@if $purple {
+	$zurg-purple: $purple;
+}
+
+
 
 $zurg-error-red: $zurg-red;
 
@@ -55,12 +62,12 @@ $zurg-modern: true !default;
 
 // Colors
 
-$zurg-primary-color: $red !default;
+$zurg-primary-color: $zurg-purple !default;
 @if $primary-color {
 	$zurg-primary-color: $primary-color;
 }
 
-$zurg-secondary-color: $blue !default;
+$zurg-secondary-color: $zurg-red !default;
 @if $secondary-color {
 	$zurg-secondary-color: $secondary-color;
 }
@@ -84,12 +91,12 @@ $zurg-link-underline: true !default;
 
 // Buttons
 
-$zurg-primary-button-color: $zurg-primary-color !default;
+$zurg-primary-button-color: $zurg-secondary-color !default;
 @if $primary-button-color {
 	$zurg-primary-button-color: $primary-button-color;
 }
 
-$zurg-secondary-button-color: $zurg-secondary-color !default;
+$zurg-secondary-button-color: $zurg-primary-color !default;
 @if $secondary-button-color {
 	$zurg-secondary-button-color: $secondary-button-color;
 }

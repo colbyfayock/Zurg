@@ -45,12 +45,6 @@ img {
     }
 }
 
-@include mobile() {
-    .social-widget {
-        display: none;
-    }
-}
-
 // Make that fb widget responsive!!!
 
 #fb-root {

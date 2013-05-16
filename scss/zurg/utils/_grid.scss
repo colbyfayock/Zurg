@@ -112,13 +112,21 @@
     margin-right: 0px;
 }
 
-/* Mobile */
 
-@media handheld, only screen and (max-width: $grid-page-width-mobile) {
+@include large() {
 
-    body {
-        -webkit-text-size-adjust: none;
-    }
+	.row .row {
+		.sixcol {
+		    width: 100%;
+		    margin-right: 0;
+		}
+	}
+
+}
+
+
+@include mobile() {
+
     body, .container, .row {
         width: 100%;
         min-width: 0;
@@ -170,4 +178,5 @@
     .row .last {
         margin-bottom: 0;
     }
+
 }

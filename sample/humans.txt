@@ -7,6 +7,7 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr, HTML5BP
+    Normalize.css
+    HTML5BP
+    jQuery, html5shiv
     Bourbon

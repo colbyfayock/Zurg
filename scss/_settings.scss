@@ -16,11 +16,12 @@ $modern: true;
 $lgrey: #eee;
 $mgrey: #999;
 $dgrey: #222;
-$red: #9f111b;
+$red: #8f0e0c;
 $blue: #373b4c;
+$purple: #552e84;
 
-$primary-color: $red;
-$secondary-color: $blue;
+$primary-color: $purple;
+$secondary-color: $red;
 
 // Copy
 
@@ -34,8 +35,8 @@ $link-underline: true;
 
 // Buttons
 
-$primary-button-color: $primary-color;
-$secondary-button-color: $secondary-color;
+$primary-button-color: $secondary-color;
+$secondary-button-color: $primary-color;
 
 
 /****************************************
