@@ -1,4 +1,4 @@
-Zurg Front-End Framework
+Zurg
 =========
 
-Basic layout and styles
+Get started with Zurg!
