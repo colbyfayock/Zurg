@@ -116,7 +116,17 @@
 @include large() {
 
 	.row .row {
-		.sixcol {
+		.onecol,
+		.twocol,
+		.threecol,
+		.fourcol,
+		.fivecol,
+		.sixcol,
+		.sevencol,
+		.eightcol,
+		.ninecol,
+		.tencol,
+		.elevencol {
 		    width: 100%;
 		    margin-right: 0;
 		}
