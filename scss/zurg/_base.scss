@@ -7,7 +7,7 @@
 @import 'vendor/normalize';
 @import 'vendor/h5bp';
 
-@import 'settings';
+@import 'defaults';
 
 @import 'utils/utils';
 
@@ -22,18 +22,23 @@ html, body, div {
     padding: 0;
 }
 
+html, body {
+    background-color: $zurg-color-footer;
+}
+
 body {
     font-size: 16px;
-    @include breakpoint($large-page-width) {
+    @include large() {
         font-size: 14px;
     }
-    @include breakpoint($small-page-width) {
+    @include small() {
         font-size: 12px;
     }
-    @include breakpoint($mobile-page-width) {
+    @include mobile() {
         font-size: 16px;
     }
 }
 
 @import 'partials/partials';
+// @import 'wordpress/wordpress';
 @import 'plugins/plugins';

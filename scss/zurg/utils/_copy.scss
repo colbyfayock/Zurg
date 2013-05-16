@@ -1,3 +1,25 @@
+a {
+    color: $zurg-link-color;
+    text-decoration: none;
+    @if $zurg-link-underline == true {
+        border-bottom: solid 1px $zurg-link-color;
+    }
+    @include desktop() {
+        &:hover {
+            color: lighten($zurg-link-color, 5);
+            @if $zurg-link-underline == true {
+                border-bottom: solid 1px lighten($zurg-link-color, 5);
+            }
+        }
+        &:active {
+            color: darken($zurg-link-color, 5);
+            @if $zurg-link-underline == true {
+                border-bottom: solid 1px darken($zurg-link-color, 5);
+            }
+        }
+    }
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
 }

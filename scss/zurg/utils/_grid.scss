@@ -34,7 +34,7 @@
     }
 }
 
-@if $color-body == false {
+@if $zurg-color-body == white {
     .body .row {
         padding-bottom: 2.5em;
     }

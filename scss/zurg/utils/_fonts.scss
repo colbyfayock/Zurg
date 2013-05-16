@@ -1,4 +1,4 @@
-@include font-face(icomoon, '../fonts/icomoon/icomoon');
+@include font-face(icomoon, #{$fonts_path}/icomoon/icomoon);
 
 .icon[data-icon]:before,
 .icon[data-icon-after]:after { font-family: 'icomoon' }

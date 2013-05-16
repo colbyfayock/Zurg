@@ -11,4 +11,4 @@ output_style = :compressed
 relative_assets = true
 linecomments = false
 
-require 'compass-growl'
+# require 'compass-growl'

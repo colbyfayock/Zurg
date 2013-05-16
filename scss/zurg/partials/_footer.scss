@@ -1,8 +1,8 @@
 .footer {
-    color: white;
-    background-color: $color-footer;
-    @if $scheme-flat == false {
-        @include background(linear-gradient(lighten($color-footer, 2), darken($color-footer, 2)) top repeat);
+   color: white;
+    background-zurg-color: $zurg-color-footer;
+    @if $zurg-flat == false {
+        @include background(linear-gradient(lighten($zurg-color-footer, 2), darken($zurg-color-footer, 2)) top repeat);
     }
     &.container {
         padding: 1em 2em;
@@ -19,15 +19,16 @@
         margin: 0 0 .5em;
     }
     a {
-        color: $color-footer-links;
+        color: $zurg-color-footer-links;
         font-size: .9em;
         text-decoration: none;
-        @include breakpoint(false, $mobile-page-width + 1) {
+        border: 0;
+        @include desktop() {
             &:hover {
-                color: lighten($color-footer-links, 5);
+               color: lighten($zurg-color-footer-links, 5);
             }
             &:active {
-                color: darken($color-footer-links, 5);
+               color: darken($zurg-color-footer-links, 5);
             }
         }
     }
@@ -42,7 +43,7 @@
         text-align: right;
     }
     .footer-logo {
-        color: white;
+       color: white;
         font-weight: bold;
         text-transform: uppercase;
     }

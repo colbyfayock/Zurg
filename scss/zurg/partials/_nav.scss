@@ -1,54 +1,57 @@
 .nav {
+    overflow: hidden;
     color: #222;
-    background-color: $color-nav;
-    @if $scheme-flat == false {
-        @include background(linear-gradient(lighten($color-nav, 2), darken($color-nav, 2)) top repeat);
+    background-color: $zurg-color-nav;
+    @if $zurg-flat == false {
+        @include background(linear-gradient(lighten($zurg-color-nav, 2), darken($zurg-color-nav, 2)) top repeat);
     }
     div {
-        height: 2.5em;
-        line-height: 2.5em;
+        height: $zurg-nav-height;
+        line-height: $zurg-nav-height;
     }
     ul {
         display: block;
-        height: 2.5em;
+        height: $zurg-nav-height;
         padding: 0;
         margin: 0;
         float: right;
     }
     li {
         display: block;
-        height: 2.5em;
-        line-height: 2.5em;
+        height: $zurg-nav-height;
+        line-height: $zurg-nav-height;
         list-style: none;
         margin-left: 1em;
         float: left;
     }
     a {
-        color: $color-nav-links;
+        color: $zurg-color-nav-links;
         font-size: .9em;
         text-decoration: none;
-        @include breakpoint(false, $mobile-page-width + 1) {
+        border: 0;
+        @include desktop() {
             &:hover {
-                color: lighten($color-nav-links, 5);
+                color: lighten($zurg-color-nav-links, 5);
             }
             &:active {
-                color: darken($color-nav-links, 5);
+                color: darken($zurg-color-nav-links, 5);
             }
         }
     }
     .nav-logo a {
-        display: block;
-        color: $color-nav-logo;
+        @include inline-block;
+        color: $zurg-color-nav-logo;
         font-weight: bold;
         text-transform: uppercase;
     }
-    @include breakpoint($mobile-page-width) {
+    @include mobile() {
         .row, .nav-collapse, ul, li {
             width: 100%!important;
             height: auto;
             margin: 0;
+            float: none;
         }
-        .sixcol {
+        .sixcol, .threecol {
             width: 50%;
             margin: 0;
             float: left;
@@ -65,31 +68,37 @@
 
         .nav-mobile a {
             display: block;
-            width: 2.5em;
-            height: 2.5em;
+            height: $zurg-nav-height;
             font-size: 1em;
-            line-height: 2.5em;
+            line-height: $zurg-nav-height;
             text-align: center;
             float: right;
         }
         .nav-mobile i {
             @include inline-block;
-            width: 2em;
-            height: 2em;
-            font-size: .9em;
-            line-height: 2em;
+            width: 1.9em;
+            height: 1.9em;
+            font-size: 16px;
+            line-height: 1.9em;
             border-radius: .25em;
-            background-color: #222;
+            background-color: $dgrey;
+            &[data-icon]:before {
+                -webkit-font-smoothing: none!important;
+            }
         }
 
         .nav-collapse {
             display: none;
             background-color: $dgrey;
+            clear: both;
+        }
+        .nav-collapse ul {
+            background-color: transparent;
         }
         .nav-collapse a {
             display: block;
             padding: 0 1em;
-            border-bottom: solid 1px black;
+            border-bottom: solid 1px darken($dgrey, 5);
         }
     }
 }

@@ -7,9 +7,9 @@ form {
     .form-error {
         @extend %alert-defaults;
         display: none;
-        color: $red;
-        background-color: lighten($red, 30);
-        border: solid 1px $red;
+        color: $zurg-error-red;
+        background-color: lighten($zurg-error-red, 40);
+        border: solid 1px $zurg-error-red;
     }
     .form-section {
         margin-bottom: 2em;
@@ -39,7 +39,7 @@ form {
         @include placeholder {
             color: $mgrey;
         };
-        @if $scheme-flat == false {
+        @if $zurg-flat == false {
             @include background(linear-gradient(darken($lgrey, 3), lighten($lgrey, 3)) top repeat);
             box-shadow: inset 0 0 4px 1px rgba(0,0,0,.05);
         }
@@ -49,15 +49,15 @@ form {
         }
         &:focus {
             background-color: lighten(#eee, 2);
-            @if $scheme-flat == false {
+            @if $zurg-flat == false {
                 @include background(linear-gradient(darken($lgrey, 1), lighten($lgrey, 5)) top repeat);
                 box-shadow: inset 0 0 4px 1px rgba(0,0,0,.05);
             }
         }
-        @include breakpoint(false, $mobile-page-width + 1) {
+        @include desktop() {
             &:hover {
                 background-color: lighten(#eee, 2);
-                @if $scheme-flat == false {
+                @if $zurg-flat == false {
                     @include background(linear-gradient(darken($lgrey, 1), lighten($lgrey, 5)) top repeat);
                     box-shadow: inset 0 0 4px 1px rgba(0,0,0,.05);
                 }
@@ -66,11 +66,11 @@ form {
     }
     select {
         color: $mgrey;
-        background-image: url(../img/dropdown-arrow.png);
+        background-image: url(#{$img_path}/dropdown-arrow.png);
         background-repeat: no-repeat;
         background-position: 97.5% 50%;
         @include hidpi(){
-            background-image: url(../img/dropdown-arrow@2x.png);
+            background-image: url(#{$img_path}/dropdown-arrow@2x.png);
             background-size: 10px auto;
         }
     }
@@ -84,12 +84,12 @@ form {
         min-height: 8em;
         resize: vertical;
     }
-    input, select, textarea {
+    input[type="text"], select, textarea {
         &.error {
-            background-color: lighten($red, 35);
+            background-color: lighten($zurg-error-red, 60);
             outline: none;
-            border: solid $red 1px;
-            box-shadow: 0 0 .4em $red;
+            border: solid $zurg-error-red 1px;
+            box-shadow: 0 0 .4em $zurg-error-red;
         }
     }
     .check-radio {
@@ -123,10 +123,10 @@ form {
         clear: none;
     }
     &:not(#foo) fieldset input[type='radio'] + label {
-        background-image: url(../img/radio@2x.png);
+        background-image: url(#{$img_path}/radio@2x.png);
     }
     &:not(#foo) fieldset input[type='checkbox'] + label {
-        background-image: url(../img/checkbox@2x.png);
+        background-image: url(#{$img_path}/checkbox@2x.png);
     }
     &:not(#foo) fieldset input[type='radio']:checked + label,
     &:not(#foo) fieldset input[type='checkbox']:checked + label {

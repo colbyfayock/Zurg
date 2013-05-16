@@ -1,0 +1,66 @@
+$assets_path: '../';
+$img_path: #{$assets_path}/img;
+$fonts_path: #{$assets_path}/fonts;
+
+/****************************************
+ * Scheme (Colors, etc)
+ ****************************************/
+
+// Scheme
+
+$flat: true;
+$modern: true;
+
+// Colors
+
+$lgrey: #eee;
+$mgrey: #999;
+$dgrey: #222;
+$red: #9f111b;
+$blue: #373b4c;
+
+$primary-color: $red;
+$secondary-color: $blue;
+
+// Copy
+
+$link-color: $secondary-color;
+$link-underline: true;
+
+
+/****************************************
+ * Objects (Buttons, etc)
+ ****************************************/
+
+// Buttons
+
+$primary-button-color: $primary-color;
+$secondary-button-color: $secondary-color;
+
+
+/****************************************
+ * Partials (Nav, Footer, etc)
+ ****************************************/
+
+// Nav
+
+$color-nav: $primary-color;
+$color-nav-logo: white;
+$color-nav-links: $lgrey;
+
+$nav-height: 2.5em;
+
+// Footer
+
+$color-footer: $dgrey;
+$color-footer-links: $lgrey;
+
+
+/****************************************
+ * Body (Content, etc)
+ ****************************************/
+
+// Body
+
+$color-body: white;
+

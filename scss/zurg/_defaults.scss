@@ -1,0 +1,162 @@
+/****************************************
+ * Import user settings
+ ****************************************/
+
+@import '../settings';
+
+
+/****************************************
+ * Default colors
+ ****************************************/
+
+$zurg-lgrey: #eee !default;
+@if $lgrey {
+	$zurg-lgrey: $lgrey;
+}
+
+$zurg-mgrey: #999 !default;
+@if $mgrey {
+	$zurg-mgrey: $mgrey;
+}
+
+$zurg-dgrey: #222 !default;
+@if $dgrey {
+	$zurg-dgrey: $dgrey;
+}
+
+$zurg-red: #9f111b !default;
+@if $red {
+	$zurg-red: $red;
+}
+
+$zurg-blue: #373b4c !default;
+@if $blue {
+	$zurg-blue: $blue;
+}
+
+$zurg-error-red: $zurg-red;
+
+
+/****************************************
+ * Scheme (Colors, etc)
+ ****************************************/
+
+// Scheme settings
+
+$zurg-flat: true !default;
+@if $flat {
+	$zurg-flat: $flat;
+}
+
+$zurg-modern: true !default;
+@if $modern {
+	$zurg-modern: $modern;
+}
+
+// Colors
+
+$zurg-primary-color: $red !default;
+@if $primary-color {
+	$zurg-primary-color: $primary-color;
+}
+
+$zurg-secondary-color: $blue !default;
+@if $secondary-color {
+	$zurg-secondary-color: $secondary-color;
+}
+
+// Copy
+
+$zurg-link-color: $zurg-secondary-color !default;
+@if $link-color {
+	$zurg-link-color: $link-color;
+}
+
+$zurg-link-underline: true !default;
+@if $link-underline {
+	$zurg-link-underline: $link-underline;
+}
+
+
+/****************************************
+ * Objects (Buttons, etc)
+ ****************************************/
+
+// Buttons
+
+$zurg-primary-button-color: $zurg-primary-color !default;
+@if $primary-button-color {
+	$zurg-primary-button-color: $primary-button-color;
+}
+
+$zurg-secondary-button-color: $zurg-secondary-color !default;
+@if $secondary-button-color {
+	$zurg-secondary-button-color: $secondary-button-color;
+}
+
+
+/****************************************
+ * Partials (Nav, Footer, etc)
+ ****************************************/
+
+// Nav
+
+$zurg-color-nav: $zurg-primary-color !default;
+@if $color-nav {
+	$zurg-color-nav: $color-nav;
+}
+
+$zurg-color-nav-logo: white !default;
+@if $color-nav-logo {
+	$zurg-color-nav-logo: $color-nav-logo;
+}
+
+$zurg-color-nav-links: $lgrey !default;
+@if $color-nav-links {
+	$zurg-color-nav-links: $color-nav-links;
+}
+
+$zurg-nav-height: 2.5em !default;
+@if $nav-height {
+	$zurg-nav-height: $nav-height;
+}
+
+// Footer
+
+$zurg-color-footer: $dgrey !default;
+@if $color-footer {
+	$zurg-color-footer: $color-footer;
+}
+
+$zurg-color-footer-links: $lgrey !default;
+@if $color-footer-links {
+	$zurg-color-footer-links: $color-footer-links;
+}
+
+
+/****************************************
+ * Body (Content, etc)
+ ****************************************/
+
+// Body
+
+$zurg-color-body: white !default;
+@if $color-body {
+	$zurg-color-body: $color-body;
+}
+
+
+/****************************************
+ * Size Settings (Page width, etc)
+ ****************************************/
+
+// Dimensions
+
+$mobile-page-width: 640px;
+$tablet-page-width: 1024px;
+
+$large-page-width: 1000px;
+$small-page-width: 800px;
+
+$grid-page-width: 1200px;
+$grid-page-width-mobile: 640px;

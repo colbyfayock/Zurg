@@ -116,7 +116,8 @@ html[xmlns] .slides {
     height: 30px;
     cursor: pointer;
     text-indent: -9999px;
-    background: url(../img/flexslider/bg_direction_nav.png) no-repeat 0 0;
+    background: url(#{$img_path}/flexslider/bg_direction_nav.png) no-repeat 0 0;
+    border-bottom: 0;
     -webkit-transition: all .3s ease;
     margin: -20px 0 0;
 }
@@ -205,7 +206,7 @@ html[xmlns] .slides {
     cursor: default;
 }
 
-@include breakpoint($mobile-page-width) {
+@include mobile() {
     .flex-direction-nav .flex-prev {
         opacity: 1;
         left: 0;

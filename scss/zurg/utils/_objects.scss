@@ -40,12 +40,12 @@ img {
     background-color: white;
     padding: .5em;
     border: solid 1px #eee;
-    @if $scheme-flat == false {
+    @if $zurg-flat == false {
         box-shadow: 0 2px 5px rgba(0,0,0,.15);
     }
 }
 
-@include breakpoint($mobile-page-width) {
+@include mobile() {
     .social-widget {
         display: none;
     }

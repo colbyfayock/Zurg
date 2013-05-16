@@ -82,7 +82,7 @@
   display: inherit !important;
 }
 
-@include breakpoint($tablet-page-width, $mobile-page-width) {
+@include tablet() {
   .hidden-desktop {
     display: inherit !important;
   }
@@ -100,7 +100,7 @@
   }
 }
 
-@include breakpoint($mobile-page-width) {
+@include mobile() {
   .hidden-desktop {
     display: inherit !important;
   }
