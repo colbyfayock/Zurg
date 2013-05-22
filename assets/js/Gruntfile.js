@@ -9,7 +9,6 @@ module.exports = function(grunt) {
                 ' * <%= pkg.name %> <%= pkg.version %>\n' +
                 ' * <%= pkg.description %> \n' +
                 ' */\n',
-        preserveComments: 'all',
         mangle: true,
         compress: true
       },
