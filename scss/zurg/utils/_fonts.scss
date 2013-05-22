@@ -1,3 +1,9 @@
+// Typefaces
+
+@import url(http://fonts.googleapis.com/css?family=Lemon);
+
+// Icons
+
 @include font-face(icomoon, #{$fonts_path}/icomoon/icomoon);
 
 .icon[data-icon]:before,

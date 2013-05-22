@@ -8,8 +8,7 @@ $fonts_path: #{$assets_path}/fonts;
 
 // Scheme
 
-$flat: true;
-$modern: true;
+$flat: 'almost-flat'; // true, false, 'almost-flat'
 
 // Colors
 
@@ -28,8 +27,12 @@ $primary-color: $purple;
 $secondary-color: $red;
 
 // Copy
+
 $zurg-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 $default-font: $zurg-sans-serif;
+
+$display-font: 'Lemon', cursive;
 
 $link-color: $secondary-color;
 $link-underline: true;

@@ -5,24 +5,23 @@
     @if $zurg-flat == false {
         @include background(linear-gradient(lighten($zurg-color-nav, 2), darken($zurg-color-nav, 2)) top repeat);
     }
-    div {
-        height: $zurg-nav-height;
-        line-height: $zurg-nav-height;
-    }
     ul {
         display: block;
-        height: $zurg-nav-height;
         padding: 0;
         margin: 0;
-        float: right;
     }
     li {
         display: block;
         height: $zurg-nav-height;
         line-height: $zurg-nav-height;
         list-style: none;
-        margin-left: 1em;
         float: left;
+    }
+    .left li {
+    	margin-right: 1em;
+    }
+    .right li {
+    	margin-left: 1em;
     }
     a {
         color: $zurg-color-nav-links;
@@ -38,17 +37,23 @@
             }
         }
     }
-    .nav-logo a {
-        @include inline-block;
-        color: $zurg-color-nav-logo;
-        font-weight: bold;
-        text-transform: uppercase;
+    .nav-logo {
+    	a {
+	        @include inline-block;
+	        color: $zurg-color-nav-logo;
+	        font-size: 1.3em;
+	        font-family: $zurg-font-nav-logo;
+	        font-weight: bold;
+	        @if $zurg-logo-uppercase == true {
+	        	text-transform: uppercase;
+	        }
+	    }
     }
     @include mobile() {
         .row, .nav-collapse, ul, li {
             width: 100%!important;
             height: auto;
-            margin: 0;
+            margin: 0!important;
             float: none;
         }
         .sixcol, .threecol {
