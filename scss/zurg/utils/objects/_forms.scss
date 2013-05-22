@@ -35,6 +35,7 @@ form {
         background-color: $zurg-grey1;
         padding: .75em;
         border-radius: .25em;
+        outline: 0;
         border: solid 1px $zurg-grey2;
         @include placeholder {
             color: $zurg-grey3;
@@ -49,6 +50,7 @@ form {
         }
         &:focus {
             background-color: lighten($zurg-grey1, 2);
+            box-shadow: 0 0 3px $zurg-primary-color;
             @if $zurg-flat == false {
                 @include background(linear-gradient(darken($zurg-grey1, 1), lighten($zurg-grey1, 5)) top repeat);
                 box-shadow: inset 0 0 4px 1px rgba(0,0,0,.05);
