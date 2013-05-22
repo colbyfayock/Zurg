@@ -28,19 +28,19 @@ form {
     }
     input[type="text"], select, textarea {
         width: 100%;
-        color: $mgrey;
+        color: $zurg-grey3;
         font-size: .9em;
         font-weight: 200;
         -webkit-appearance: none;
-        background-color: $lgrey;
+        background-color: $zurg-grey1;
         padding: .75em;
         border-radius: .25em;
-        border: solid 1px #ddd;
+        border: solid 1px $zurg-grey2;
         @include placeholder {
-            color: $mgrey;
+            color: $zurg-grey3;
         };
         @if $zurg-flat == false {
-            @include background(linear-gradient(darken($lgrey, 3), lighten($lgrey, 3)) top repeat);
+            @include background(linear-gradient(darken($zurg-grey1, 3), lighten($zurg-grey1, 3)) top repeat);
             box-shadow: inset 0 0 4px 1px rgba(0,0,0,.05);
         }
         &.button {
@@ -48,24 +48,24 @@ form {
             line-height: inherit;
         }
         &:focus {
-            background-color: lighten(#eee, 2);
+            background-color: lighten($zurg-grey1, 2);
             @if $zurg-flat == false {
-                @include background(linear-gradient(darken($lgrey, 1), lighten($lgrey, 5)) top repeat);
+                @include background(linear-gradient(darken($zurg-grey1, 1), lighten($zurg-grey1, 5)) top repeat);
                 box-shadow: inset 0 0 4px 1px rgba(0,0,0,.05);
             }
         }
         @include desktop() {
             &:hover {
-                background-color: lighten(#eee, 2);
+                background-color: lighten($zurg-grey1, 2);
                 @if $zurg-flat == false {
-                    @include background(linear-gradient(darken($lgrey, 1), lighten($lgrey, 5)) top repeat);
+                    @include background(linear-gradient(darken($zurg-grey1, 1), lighten($zurg-grey1, 5)) top repeat);
                     box-shadow: inset 0 0 4px 1px rgba(0,0,0,.05);
                 }
             }
         }
     }
     select {
-        color: $mgrey;
+        color: $zurg-grey3;
         background-image: url(#{$img_path}/dropdown-arrow.png);
         background-repeat: no-repeat;
         background-position: 97.5% 50%;
@@ -78,7 +78,7 @@ form {
         background-position: 95% 50%;
     }
     option {
-        color: $mgrey;
+        color: $zurg-grey3;
     }
     textarea {
         min-height: 8em;

@@ -6,42 +6,47 @@
 
 
 /****************************************
- * Default colors
+ * Variables
  ****************************************/
 
-$zurg-lgrey: #eee !default;
-@if $lgrey {
-	$zurg-lgrey: $lgrey;
-}
+// Colors
 
-$zurg-mgrey: #999 !default;
-@if $mgrey {
-	$zurg-mgrey: $mgrey;
-}
+$grey1: #e4e6e9 !default;
+$zurg-grey1: $grey1;
 
-$zurg-dgrey: #222 !default;
-@if $dgrey {
-	$zurg-dgrey: $dgrey;
-}
+$grey2: #c8ccd2 !default;
+$zurg-grey2: $grey2;
 
-$zurg-red: #8f0e0c !default;
-@if $red {
-	$zurg-red: $red;
-}
+$grey3: #9198a3 !default;
+$zurg-grey3: $grey3;
 
-$zurg-blue: #373b4c !default;
-@if $blue {
-	$zurg-blue: $blue;
-}
+$grey4: #47484a !default;
+$zurg-grey4: $grey4;
 
-$zurg-purple: #552e84 !default;
-@if $purple {
-	$zurg-purple: $purple;
-}
+$grey5: #2d3133 !default;
+$zurg-grey5: $grey5;
+
+$red: #8f0e0c !default;
+$zurg-red: $red;
+
+$blue: #373b4c !default;
+$zurg-blue: $blue;
+
+$purple: #552e84 !default;
+$zurg-purple: $purple;
 
 
+// Specific colors
 
-$zurg-error-red: $zurg-red;
+$error-red: $zurg-red !default;
+$zurg-error-red: $error-red;
+
+
+// Fonts
+
+$sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$zurg-sans-serif: $sans-serif;
+
 
 
 /****************************************
@@ -50,39 +55,30 @@ $zurg-error-red: $zurg-red;
 
 // Scheme settings
 
-$zurg-flat: true !default;
-@if $flat {
-	$zurg-flat: $flat;
-}
+$flat: true !default;
+$zurg-flat: $flat;
 
-$zurg-modern: true !default;
-@if $modern {
-	$zurg-modern: $modern;
-}
+$modern: true !default;
+$zurg-modern: $modern;
 
 // Colors
 
-$zurg-primary-color: $zurg-purple !default;
-@if $primary-color {
-	$zurg-primary-color: $primary-color;
-}
+$primary-color: $zurg-purple!default;
+$zurg-primary-color: $primary-color;
 
-$zurg-secondary-color: $zurg-red !default;
-@if $secondary-color {
-	$zurg-secondary-color: $secondary-color;
-}
+$secondary-color: $zurg-red !default;
+$zurg-secondary-color: $secondary-color;
 
 // Copy
 
-$zurg-link-color: $zurg-secondary-color !default;
-@if $link-color {
-	$zurg-link-color: $link-color;
-}
+$default-font: $zurg-sans-serif !default;
+$zurg-default-font: $default-font;
 
-$zurg-link-underline: true !default;
-@if $link-underline {
-	$zurg-link-underline: $link-underline;
-}
+$link-color: $zurg-secondary-color !default;
+$zurg-link-color: $link-color;
+
+$link-underline: true !default;
+$zurg-link-underline: $link-underline;
 
 
 /****************************************
@@ -91,15 +87,11 @@ $zurg-link-underline: true !default;
 
 // Buttons
 
-$zurg-primary-button-color: $zurg-secondary-color !default;
-@if $primary-button-color {
-	$zurg-primary-button-color: $primary-button-color;
-}
+$primary-button-color: $zurg-secondary-color !default;
+$zurg-primary-button-color: $primary-button-color;
 
-$zurg-secondary-button-color: $zurg-primary-color !default;
-@if $secondary-button-color {
-	$zurg-secondary-button-color: $secondary-button-color;
-}
+$secondary-button-color: $zurg-primary-color !default;
+$zurg-secondary-button-color: $secondary-button-color;
 
 
 /****************************************
@@ -108,37 +100,25 @@ $zurg-secondary-button-color: $zurg-primary-color !default;
 
 // Nav
 
-$zurg-color-nav: $zurg-primary-color !default;
-@if $color-nav {
-	$zurg-color-nav: $color-nav;
-}
+$color-nav: $zurg-primary-color !default;
+$zurg-color-nav: $color-nav;
 
-$zurg-color-nav-logo: white !default;
-@if $color-nav-logo {
-	$zurg-color-nav-logo: $color-nav-logo;
-}
+$color-nav-logo: white !default;
+$zurg-color-nav-logo: $color-nav-logo;
 
-$zurg-color-nav-links: $lgrey !default;
-@if $color-nav-links {
-	$zurg-color-nav-links: $color-nav-links;
-}
+$color-nav-links: $zurg-grey1 !default;
+$zurg-color-nav-links: $color-nav-links;
 
-$zurg-nav-height: 2.5em !default;
-@if $nav-height {
-	$zurg-nav-height: $nav-height;
-}
+$nav-height: 2.5em !default;
+$zurg-nav-height: $nav-height;
 
 // Footer
 
-$zurg-color-footer: $dgrey !default;
-@if $color-footer {
-	$zurg-color-footer: $color-footer;
-}
+$color-footer: $zurg-grey5 !default;
+$zurg-color-footer: $color-footer;
 
-$zurg-color-footer-links: $lgrey !default;
-@if $color-footer-links {
-	$zurg-color-footer-links: $color-footer-links;
-}
+$color-footer-links: $zurg-grey1 !default;
+$zurg-color-footer-links: $color-footer-links;
 
 
 /****************************************
@@ -147,10 +127,8 @@ $zurg-color-footer-links: $lgrey !default;
 
 // Body
 
-$zurg-color-body: white !default;
-@if $color-body {
-	$zurg-color-body: $color-body;
-}
+$color-body: white !default;
+$zurg-color-body: $color-body;
 
 
 /****************************************

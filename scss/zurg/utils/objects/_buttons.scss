@@ -36,27 +36,27 @@ button, .button {
     @extend %button-base;
 
     color: white;
-    background-color: $mgrey;
-    border: 1px solid darken($mgrey, 5);
+    background-color: $zurg-grey3;
+    border: 1px solid darken($zurg-grey3, 5);
 
     @if $zurg-flat == false or $zurg-modern == true {
-        text-shadow: 0 1px 0 darken($mgrey, 15);
-        @include background(linear-gradient(lighten($mgrey, 3), darken($mgrey, 3)) top repeat);
-        box-shadow: inset 0 1px 0 0 lighten($mgrey, 15);
+        text-shadow: 0 1px 0 darken($zurg-grey3, 15);
+        @include background(linear-gradient(lighten($zurg-grey3, 3), darken($zurg-grey3, 3)) top repeat);
+        box-shadow: inset 0 1px 0 0 lighten($zurg-grey3, 15);
     }
 
     @include desktop() {
         &:hover:not(:disabled) {
-            background-color: lighten($mgrey, 3);
+            background-color: lighten($zurg-grey3, 3);
             @if $zurg-flat == false or $zurg-modern == true {
-                @include background(linear-gradient(lighten($mgrey, 6), $mgrey) top repeat);
-                box-shadow: inset 0 1px 0 0 lighten($mgrey, 18);
+                @include background(linear-gradient(lighten($zurg-grey3, 6), $zurg-grey3) top repeat);
+                box-shadow: inset 0 1px 0 0 lighten($zurg-grey3, 18);
             }
         }
         &:active:not(:disabled) {
-            background-color: darken($mgrey, 3);
+            background-color: darken($zurg-grey3, 3);
             @if $zurg-flat == false or $zurg-modern == true {
-                @include background(linear-gradient(darken($mgrey, 2), lighten($mgrey, 2)) top repeat);
+                @include background(linear-gradient(darken($zurg-grey3, 2), lighten($zurg-grey3, 2)) top repeat);
             }
         }
     }

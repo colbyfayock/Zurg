@@ -39,7 +39,7 @@ img {
 .frame {
     background-color: white;
     padding: .5em;
-    border: solid 1px #eee;
+    border: solid 1px $zurg-grey1;
     @if $zurg-flat == false {
         box-shadow: 0 2px 5px rgba(0,0,0,.15);
     }

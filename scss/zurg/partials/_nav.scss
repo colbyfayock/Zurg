@@ -1,6 +1,6 @@
 .nav {
     overflow: hidden;
-    color: #222;
+    color: $zurg-grey5;
     background-color: $zurg-color-nav;
     @if $zurg-flat == false {
         @include background(linear-gradient(lighten($zurg-color-nav, 2), darken($zurg-color-nav, 2)) top repeat);
@@ -81,7 +81,7 @@
             font-size: 16px;
             line-height: 1.9em;
             border-radius: .25em;
-            background-color: $dgrey;
+            background-color: $zurg-grey5;
             &[data-icon]:before {
                 -webkit-font-smoothing: none!important;
             }
@@ -89,7 +89,7 @@
 
         .nav-collapse {
             display: none;
-            background-color: $dgrey;
+            background-color: $zurg-grey5;
             clear: both;
         }
         .nav-collapse ul {
@@ -98,7 +98,7 @@
         .nav-collapse a {
             display: block;
             padding: 0 1em;
-            border-bottom: solid 1px darken($dgrey, 5);
+            border-bottom: solid 1px darken($zurg-grey5, 5);
         }
     }
 }

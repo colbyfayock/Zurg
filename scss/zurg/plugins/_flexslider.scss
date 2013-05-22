@@ -33,7 +33,7 @@
     position: absolute;
     top: 0;
     zoom: 1;
-    background: #fff;
+    background: white;
     padding: 0;
     margin: 0 0 2em;
     ul, ol, li {
@@ -165,7 +165,7 @@ html[xmlns] .slides {
     display: block;
     width: 11px;
     height: 11px;
-    background: #ddd;
+    background: $zurg-grey2;
     background: rgba(255,255,255,0.5);
     cursor: pointer;
     text-indent: -9999px;
@@ -173,12 +173,12 @@ html[xmlns] .slides {
     box-shadow: inset 0 0 3px rgba(255,255,255,0.3);
 }
 .flex-control-paging li a:hover {
-    background: #eee;
+    background: $zurg-grey1;
     background: rgba(255,255,255,0.7);
 }
 .flex-control-paging li a.flex-active {
     cursor: default;
-    background: #fff;
+    background: white;
     background: rgba(255,255,255,0.9);
 }
 
