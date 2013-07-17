@@ -11,4 +11,6 @@ output_style = :compressed
 relative_assets = true
 linecomments = false
 
+# Uncomment if compass-growl gem installed
+# https://github.com/Compass/compass-growl
 # require 'compass-growl'
