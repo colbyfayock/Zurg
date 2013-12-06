@@ -9,7 +9,7 @@ fonts_dir = "assets/fonts"
 
 output_style = :compressed
 relative_assets = true
-linecomments = false
+line_comments = false
 
 # Uncomment if compass-growl gem installed
 # https://github.com/Compass/compass-growl
