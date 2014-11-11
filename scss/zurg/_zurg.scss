@@ -7,7 +7,7 @@
 @import 'vendor/normalize';
 @import 'vendor/h5bp';
 
-@import 'defaults';
+@import 'settings/settings';
 
 @import 'utils/utils';
 
@@ -20,10 +20,6 @@ html, body, div {
     border: 0;
     margin: 0;
     padding: 0;
-}
-
-html, body {
-    background-color: $zurg-color-footer;
 }
 
 body {
@@ -39,6 +35,4 @@ body {
     }
 }
 
-@import 'partials/partials';
-// @import 'wordpress/wordpress';
 @import 'plugins/plugins';
