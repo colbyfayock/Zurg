@@ -1,4 +1,14 @@
-// Required
+// Import the full Zurg library
 @import 'zurg/zurg';
 
+// Or import individual sets
+// @import 'zurg/zurg-ui';
+// @import 'zurg/zurg-kit';
+
+
 // Start custom css here
+
+* {
+    @include box-sizing(border-box);
+    text-align: left;
+}

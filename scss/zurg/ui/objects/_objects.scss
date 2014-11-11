@@ -5,9 +5,9 @@
     margin-bottom: 1em;
 }
 
-@import 'objects/buttons';
-@import 'objects/forms';
-@import 'objects/galleries';
+@import 'buttons';
+@import 'forms';
+@import 'galleries';
 
 hr {
     @include clearfix;
