@@ -1,0 +1,28 @@
+.alignnone {
+    float: none;
+}
+
+.alignright {
+    @extend .float-right;
+}
+
+.alignleft {
+    @extend .float-left;
+}
+
+.aligncenter {
+    @extend .center;
+}
+
+
+// Images
+
+.image-right {
+    margin: 0 0 1em 1em;
+    float: right;
+}
+
+.image-left {
+    margin: 0 1em 1em 0;
+    float: left;
+}

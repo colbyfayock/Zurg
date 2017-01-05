@@ -1,0 +1,123 @@
+// Set up basic color values
+
+$color-map: (
+
+    red: #ed3125,
+    pink: #e91e63,
+    magenta: #BE4AD6,
+    purple: #673ab7,
+    indigo: #3f51b5,
+    blue: #6d85c5,
+    blue-light: #daeaef,
+    cyan: #00bcd4,
+    teal: #009688,
+    teal-light: #9cbdc7,
+    green: #4caf50,
+    yellow: #ffcd5e,
+    amber: #ffc107,
+    orange: #ff9800,
+    brown: #795548,
+    grey: #607d8b,
+
+    grey1: lighten(#607d8b, 45),
+    grey2: lighten(#607d8b, 30),
+    grey3: #9aacb2,
+    grey4: #607d8b,
+    grey5: #474747,
+    grey6: #272f32,
+    grey7: darken(#607d8b, 45),
+
+    alert: orange,
+    warning: yellow,
+    error: red,
+    success: green,
+    info: blue,
+
+    primary: red,
+    secondary: blue,
+
+);
+
+
+// If a map exists with user overrides, merge / overwrite values
+
+$settings-colors: false !default;
+
+@if type-of($settings-colors) == map {
+    $color-map: map-merge($color-map, $settings-colors);
+}
+
+
+// Set up variable names for all known color values
+
+$color-red: map-get($color-map, red);
+$color-pink: map-get($color-map, pink);
+$color-magenta: map-get($color-map, magenta);
+$color-purple: map-get($color-map, purple);
+$color-indigo: map-get($color-map, indigo);
+$color-blue: map-get($color-map, blue);
+$color-blue-light: map-get($color-map, blue-light);
+$color-cyan: map-get($color-map, cyan);
+$color-teal: map-get($color-map, teal);
+$color-teal-light: map-get($color-map, teal-light);
+$color-green: map-get($color-map, green);
+$color-yellow: map-get($color-map, yellow);
+$color-amber: map-get($color-map, amber);
+$color-orange: map-get($color-map, orange);
+$color-brown: map-get($color-map, brown);
+$color-grey: map-get($color-map, grey);
+
+$color-grey1: map-get($color-map, grey1);
+$color-grey2: map-get($color-map, grey2);
+$color-grey3: map-get($color-map, grey3);
+$color-grey4: map-get($color-map, grey4);
+$color-grey5: map-get($color-map, grey5);
+$color-grey6: map-get($color-map, grey6);
+$color-grey7: map-get($color-map, grey7);
+
+$color-primary: if(
+    map-has-key( $color-map, map-get($color-map, primary) ),
+    map-get($color-map, map-get($color-map, primary)),
+    map-get($color-map, primary)
+);
+
+$color-secondary: if(
+    map-has-key( $color-map, map-get($color-map, secondary) ),
+    map-get($color-map, map-get($color-map, secondary)),
+    map-get($color-map, secondary)
+);
+
+$color-alert: if(
+    map-has-key( $color-map, map-get($color-map, alert) ),
+    map-get($color-map, map-get($color-map, alert)),
+    map-get($color-map, alert)
+);
+$color-alert-background: lighten( $color-alert, 25 );
+
+$color-warning: if(
+    map-has-key( $color-map, map-get($color-map, warning) ),
+    map-get($color-map, map-get($color-map, warning)),
+    map-get($color-map, warning)
+);
+$color-warning-background: lighten( $color-warning, 25 );
+
+$color-error: if(
+    map-has-key( $color-map, map-get($color-map, error) ),
+    map-get($color-map, map-get($color-map, error)),
+    map-get($color-map, error)
+);
+$color-error-background: lighten( $color-error, 25 );
+
+$color-success: if(
+    map-has-key( $color-map, map-get($color-map, success) ),
+    map-get($color-map, map-get($color-map, success)),
+    map-get($color-map, success)
+);
+$color-success-background: lighten( $color-success, 25 );
+
+$color-info: if(
+    map-has-key( $color-map, map-get($color-map, info) ),
+    map-get($color-map, map-get($color-map, info)),
+    map-get($color-map, info)
+);;
+$color-info-background: lighten( $color-info, 25 );

@@ -1,0 +1,36 @@
+@import 'colors';
+@import 'typography';
+
+$border-radius: .4em !default;
+
+$grid-page-width: 1190px !default;
+
+$breakpoints: (
+    xlarge: (
+        min: 1025px,
+        columns: 12
+    ),
+    large: (
+        min: 901px,
+        max: 1024px,
+        columns: 12
+    ),
+    medium: (
+        min: 769px,
+        max: 900px,
+        columns: 12
+    ),
+    small: (
+        min: 641px,
+        max: 768px,
+        columns: 12
+    ),
+    mobile: (
+        max: 640px,
+        columns: 4
+    ),
+    notmobile: (
+        min: 640px,
+        columns: 12
+    )
+);

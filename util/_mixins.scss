@@ -1,0 +1,94 @@
+@mixin box-sizing($setting) {
+
+    @include prefixer( box-sizing, $setting, moz spec );
+
+}
+
+
+// Inspired by https://www.sitepoint.com/using-sass-maps/
+
+@mixin respond($breakpoint) {
+
+    $query: false!default;
+    $max: false!default;
+    $min: 0!default;
+    $columns: 12!default;
+
+    @if type-of($breakpoint) == list {
+
+        @if ( length($breakpoint) > 0 ) {
+            @if ( map-has-key($breakpoints, nth($breakpoint, 1)) ) {
+
+                $media-max: map-get($breakpoints, nth($breakpoint, 1));
+
+                @if ( map-has-key($media-max, max) ) {
+                    $max: #{map-get($media-max, max)}
+                }
+
+            }
+        }
+
+        @if ( length($breakpoint) > 1 ) {
+
+            @if ( nth($breakpoint, 2) == 0 ) {
+
+                $min: 0;
+
+            } @elseif ( map-has-key($breakpoints, nth($breakpoint, 2)) ) {
+
+                $media-min: map-get($breakpoints, nth($breakpoint, 2));
+
+                @if ( map-has-key($media-min, min) ) {
+                    $min: #{map-get($media-min, min)}
+                }
+
+            }
+        }
+
+        @if ( length($breakpoint) > 2 ) {
+            @if ( map-has-key($breakpoints, nth($breakpoint, 3)) ) {
+                $columns: #{map-get($breakpoints, nth($breakpoint, 3))}
+            }
+        }
+
+    } @else if map-has-key($breakpoints, $breakpoint) {
+
+        $media: map-get($breakpoints, $breakpoint);
+
+        @if ( map-has-key($media, max) ) {
+            $max: #{map-get($media, max)}
+        }
+
+        @if ( map-has-key($media, min) ) {
+            $min: #{map-get($media, min)}
+        }
+
+        @if ( map-has-key($media, columns) ) {
+            $columns: #{map-get($media, columns)}
+        }
+
+    }
+
+
+    $query: min-width $min;
+
+    @if ( $max != false ) {
+        $query: join($query, max-width $max);
+
+    }
+
+    // If one of the if statements above was successful, build a query
+
+    @if ( $query != false ) {
+
+        $query: new-breakpoint( $query, $columns );
+
+        @include media($query) {
+            @content;
+        }
+
+    } @else {
+        @warn "No value could be retrieved from `#{$breakpoint}`";
+    }
+
+}
