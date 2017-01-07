@@ -55,14 +55,6 @@ $grid-number-map:
 
         @include span-columns($value);
 
-        &:nth-child( #{12/$value}n ) {
-            margin-right: 0;
-        }
-
-        &:nth-child( #{12/$value}n + 1 ) {
-            clear: left;
-        }
-
         &.lastcol {
             margin-right: 0;
         }
