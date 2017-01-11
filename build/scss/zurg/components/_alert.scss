@@ -1,0 +1,48 @@
+.alert {
+
+    display: block;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+
+    color: $color-alert-text;
+    background-color: $color-alert-background;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+.alert-warning {
+    color: $color-warning-text;
+    background-color: $color-warning-background;
+}
+
+.alert-error {
+    color: $color-error-text;
+    background-color: $color-error-background;
+}
+
+.alert-success {
+    color: $color-success-text;
+    background-color: $color-success-background;
+}
+
+.alert-info {
+    color: $color-info-text;
+    background-color: $color-info-background;
+}
