@@ -1977,16 +1977,12 @@ h6, .h6 {
 a {
   color: #673ab7; }
   @media screen and (min-width: 640px) {
+    a:visited {
+      color: #673ab7; }
     a:hover, a:focus {
       color: #8259cb; }
     a:active {
-      color: #512e90; }
-    a:visited {
-      color: #673ab7; }
-      a:visited:hover {
-        color: #8259cb; }
-      a:visited:active {
-        color: #512e90; } }
+      color: #512e90; } }
 
 p, .wp-caption,
 ul,
