@@ -103,6 +103,53 @@
 <section class="container cf">
     <div class="content">
 
+        <article id="buttons" class="row">
+
+            <header class="twelvecol article-header">
+                <h3>Buttons</h3>
+            </header>
+
+            <section class="twelvecol entry-content cf">
+                <p>
+                    <a class="button button-primary button-tiny" href="#">
+                        Button Tiny
+                    </a>
+                </p>
+                <p>
+                    <a class="button button-primary button-small" href="#">
+                        Button Small
+                    </a>
+                </p>
+                <p>
+                    <a class="button button-primary" href="#">
+                        Button Normal
+                    </a>
+                </p>
+                <p>
+                    <a class="button button-primary button-large" href="#">
+                        Button Large
+                    </a>
+                </p>
+                <p>
+                    <a class="button button-primary button-jumbo" href="#">
+                        Button Jumbo
+                    </a>
+                </p>
+                <p>
+                    <a class="button button-primary button-giant" href="#">
+                        Button Giant
+                    </a>
+                </p>
+            </section>
+
+        </article>
+
+    </div>
+</section>
+
+<section class="container cf">
+    <div class="content">
+
         <article id="alerts" class="row">
 
             <header class="twelvecol article-header">

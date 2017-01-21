@@ -359,10 +359,8 @@ $settings-button-text-transform: false !default;
     $button-size-multiplier: nth($button-size, 2);
 
     .button-#{$button-size-name} {
-        height: $button-height * $button-size-multiplier;
         font-size: $button-font-size * $button-size-multiplier;
-        line-height: $button-height * $button-size-multiplier;
-        padding: 0 ($button-height * $button-size-multiplier);
+        padding: ( ($button-height * $button-size-multiplier) / 4 )  ( ($button-height * $button-size-multiplier) / 3 * 2 );
     }
 
 }
