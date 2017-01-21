@@ -2081,7 +2081,7 @@ button {
   display: inline-block;
   box-sizing: border-box;
   appearance: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
@@ -2582,7 +2582,7 @@ button {
   .button-circle.button-small,
   .button-box.button-small,
   .button-square.button-small {
-    width: 1.875em; }
+    width: 2em; }
   .button-circle.button-tiny,
   .button-box.button-tiny,
   .button-square.button-tiny {
@@ -2595,27 +2595,27 @@ button {
 * (ex. .button-large, .button-small, etc.)
 */
 .button-giant {
-  font-size: 1.575em;
+  font-size: 1.4em;
   padding: 1.09375em 2.9166666667em; }
 
 .button-jumbo {
-  font-size: 1.35em;
+  font-size: 1.2em;
   padding: 0.9375em 2.5em; }
 
 .button-large {
-  font-size: 1.125em;
+  font-size: 1em;
   padding: 0.78125em 2.0833333333em; }
 
 .button-normal {
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 0.625em 1.6666666667em; }
 
 .button-small {
-  font-size: 0.675em;
-  padding: 0.46875em 1.25em; }
+  font-size: 0.64em;
+  padding: 0.5em 1.3333333333em; }
 
 .button-tiny {
-  font-size: 0.54em;
+  font-size: 0.48em;
   padding: 0.375em 1em; }
 
 .button-full {
