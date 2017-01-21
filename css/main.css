@@ -448,7 +448,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 6.1721523119%; }
+  width: 6.1721523119%;
+  min-height: 1px; }
   .onecol:last-child {
     margin-right: 0; }
   .onecol.lastcol {
@@ -465,7 +466,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 14.7019566472%; }
+  width: 14.7019566472%;
+  min-height: 1px; }
   .twocol:last-child {
     margin-right: 0; }
   .twocol.lastcol {
@@ -482,7 +484,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 23.2317609825%; }
+  width: 23.2317609825%;
+  min-height: 1px; }
   .threecol:last-child {
     margin-right: 0; }
   .threecol.lastcol {
@@ -499,7 +502,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 31.7615653177%; }
+  width: 31.7615653177%;
+  min-height: 1px; }
   .fourcol:last-child {
     margin-right: 0; }
   .fourcol.lastcol {
@@ -516,7 +520,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 40.291369653%; }
+  width: 40.291369653%;
+  min-height: 1px; }
   .fivecol:last-child {
     margin-right: 0; }
   .fivecol.lastcol {
@@ -533,7 +538,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 48.8211739883%; }
+  width: 48.8211739883%;
+  min-height: 1px; }
   .sixcol:last-child {
     margin-right: 0; }
   .sixcol.lastcol {
@@ -550,7 +556,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 57.3509783236%; }
+  width: 57.3509783236%;
+  min-height: 1px; }
   .sevencol:last-child {
     margin-right: 0; }
   .sevencol.lastcol {
@@ -567,7 +574,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 65.8807826589%; }
+  width: 65.8807826589%;
+  min-height: 1px; }
   .eightcol:last-child {
     margin-right: 0; }
   .eightcol.lastcol {
@@ -584,7 +592,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 74.4105869942%; }
+  width: 74.4105869942%;
+  min-height: 1px; }
   .ninecol:last-child {
     margin-right: 0; }
   .ninecol.lastcol {
@@ -601,7 +610,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 82.9403913294%; }
+  width: 82.9403913294%;
+  min-height: 1px; }
   .tencol:last-child {
     margin-right: 0; }
   .tencol.lastcol {
@@ -618,7 +628,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 91.4701956647%; }
+  width: 91.4701956647%;
+  min-height: 1px; }
   .elevencol:last-child {
     margin-right: 0; }
   .elevencol.lastcol {
@@ -635,7 +646,8 @@ template {
   float: left;
   display: block;
   margin-right: 2.3576520234%;
-  width: 100%; }
+  width: 100%;
+  min-height: 1px; }
   .twelvecol:last-child {
     margin-right: 0; }
   .twelvecol.lastcol {

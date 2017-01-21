@@ -54,6 +54,7 @@ $grid-number-map:
     .#{$name}col {
 
         @include span-columns($value);
+        min-height: 1px;
 
         &.lastcol {
             margin-right: 0;
