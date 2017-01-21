@@ -444,6 +444,11 @@ template {
 .row-big {
   padding: 4em 0; }
 
+.grid-container {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 .onecol {
   float: left;
   display: block;

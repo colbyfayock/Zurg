@@ -30,6 +30,15 @@ $gutter: modular-scale(1, 2em, $golden) !default;
     padding: 4em 0;
 }
 
+// This is specifically for resetting UL's
+// but can be used generically
+
+.grid-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 $grid-number-map:
     ( 1  'one' )
