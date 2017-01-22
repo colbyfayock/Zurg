@@ -78,6 +78,8 @@ $spacing-addition-helpers:
     ( 4.5  'fourhalf' )
     ( 5    'five' )
     ( 5.5  'fivehalf' )
+    ( 6    'six' )
+    ( 6.5  'sixhalf' )
 ;
 
 @each $removal in $spacing-removal-helpers {
