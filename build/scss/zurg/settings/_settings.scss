@@ -21,8 +21,12 @@ $breakpoints: (
         columns: 12
     ),
     small: (
-        min: 641px,
+        min: 481px,
         max: 768px,
+        columns: 12
+    ),
+    tiny: (
+        max: 480px,
         columns: 12
     ),
     mobile: (

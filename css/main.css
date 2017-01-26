@@ -1136,12 +1136,20 @@ template {
   .display-block-medium {
     display: block; } }
 
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .hide-small {
     display: none; } }
 
-@media screen and (min-width: 641px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .display-block-small {
+    display: block; } }
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .hide-tiny {
+    display: none; } }
+
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .display-block-tiny {
     display: block; } }
 
 @media screen and (min-width: 0) and (max-width: 640px) {
