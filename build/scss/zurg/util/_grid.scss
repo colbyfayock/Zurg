@@ -65,6 +65,11 @@ $grid-number-map:
         @include span-columns($value);
         min-height: 1px;
 
+        @if $name == 'twelve' {
+            float: none;
+            clear: both;
+        }
+
         &.lastcol {
             margin-right: 0;
         }

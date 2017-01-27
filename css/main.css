@@ -652,7 +652,9 @@ template {
   display: block;
   margin-right: 2.3576520234%;
   width: 100%;
-  min-height: 1px; }
+  min-height: 1px;
+  float: none;
+  clear: both; }
   .twelvecol:last-child {
     margin-right: 0; }
   .twelvecol.lastcol {
