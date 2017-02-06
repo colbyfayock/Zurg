@@ -1,6 +1,8 @@
 @import 'colors';
 @import 'typography';
 
+$gutter: modular-scale(1, 2em, $golden);
+
 $border-radius: .4em !default;
 
 $grid-page-width: 1190px !default;

@@ -4,10 +4,11 @@
  */
 
 @import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
-@import '../../../bower_components/neat/app/assets/stylesheets/neat';
 @import '../../../bower_components/normalize-css/normalize';
 
 @import 'settings/settings';
+
+@import '../../../bower_components/neat/app/assets/stylesheets/neat';
 
 @import 'util/util';
 
