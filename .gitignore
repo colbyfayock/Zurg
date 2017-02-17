@@ -1,4 +1,5 @@
 .DS_Store
 .sass-cache
-assets/js/node_modules
 _psd
+node_modules
+bower_components
